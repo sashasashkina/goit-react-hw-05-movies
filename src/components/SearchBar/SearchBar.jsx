@@ -21,10 +21,11 @@ export const SearchBar = () => {
     <div>
       <form onSubmit={handleSubmit} className={css.form}>
         <button type="submit" className={css.button}>
-          <span className={css.label}>Search</span>
+          <span className={css.button}>Search</span>
         </button>
 
         <input
+          className={css.title}
           onChange={handleSearch}
           value={value}
           type="text"
