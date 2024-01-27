@@ -1,0 +1,19 @@
+.header {
+  background-color: black;
+}
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.list {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.list:global(.active) {
+  color: pink;
+}
