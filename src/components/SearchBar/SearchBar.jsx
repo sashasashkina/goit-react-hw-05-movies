@@ -5,7 +5,7 @@ import React from 'react';
 
 export const SearchBar = () => {
   const [value, setValue] = useState('');
-  const [setSearchParams] = useSearchParams();
+  const [_, setSearchParams] = useSearchParams();
 
   const handleSubmit = e => {
     e.preventDefault();
