@@ -4,9 +4,10 @@ import { useState } from 'react';
 import React from 'react';
 
 export const SearchBar = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [value, setValue] = useState('');
 
-  const [, setSearchParams] = useSearchParams();
+  useState(searchParams.get('query') || '');
 
   const handleSubmit = e => {
     e.preventDefault();
